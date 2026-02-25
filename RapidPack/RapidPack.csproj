@@ -18,4 +18,16 @@
             <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
         </PackageReference>
     </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="assets\background.jfif" />
+      <None Remove="assets\favicon.ico" />
+      <None Remove="assets\background.avif" />
+      <None Remove="assets\background.jpg" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AvaloniaResource Include="assets\background.jpg" />
+      <AvaloniaResource Include="assets\favicon.ico" />
+    </ItemGroup>
 </Project>

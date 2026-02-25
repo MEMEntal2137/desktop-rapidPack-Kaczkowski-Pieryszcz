@@ -2,10 +2,29 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="800"
         x:Class="RapidPack.MainWindow"
-        Title="RapidPack">
-    <StackPanel>
-        <TextBlock>Avalonia</TextBlock>
-    </StackPanel>
+        Title="RapidPack"
+        Background="Tan"
+        Icon="assets/favicon.ico">
+    
+    <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Width="600" Height="400" Background="Tan">
+            <TextBlock>Wysokość paczki:</TextBlock>
+            <TextBox Width="100" Height="40"/>
+            <TextBlock>Szerokość paczki:</TextBlock>
+            <TextBox Width="100" Height="40"/>
+            <TextBlock>Głębokość paczki:</TextBlock>
+            <TextBox Width="100" Height="40"/>
+            <TextBlock>Waga paczki:</TextBlock>
+            <TextBox Width="100" Height="40"/>
+            <CheckBox IsChecked="False" Content="Ekspres (+15zł)"/>
+            <ComboBox SelectedIndex="0">
+                <ComboBoxItem Content="Standardowa"/>
+                <ComboBoxItem Content="Paleta"/>
+                <ComboBoxItem Content="Ostrożnie szkło"/>
+            </ComboBox>
+            <Button Content="Wyceń" Margin="0,10" Width="100" Height="40" Background="RoyalBlue"/>
+            </StackPanel>
+    </WrapPanel>
 </Window>
