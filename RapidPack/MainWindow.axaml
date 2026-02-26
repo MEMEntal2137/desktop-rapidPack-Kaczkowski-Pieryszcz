@@ -5,26 +5,41 @@
         mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="800"
         x:Class="RapidPack.MainWindow"
         Title="RapidPack"
-        Background="Tan"
         Icon="assets/favicon.ico">
     
-    <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-        <StackPanel Width="600" Height="400" Background="Tan">
-            <TextBlock>Wysokość paczki:</TextBlock>
-            <TextBox Width="100" Height="40"/>
-            <TextBlock>Szerokość paczki:</TextBlock>
-            <TextBox Width="100" Height="40"/>
-            <TextBlock>Głębokość paczki:</TextBlock>
-            <TextBox Width="100" Height="40"/>
-            <TextBlock>Waga paczki:</TextBlock>
-            <TextBox Width="100" Height="40"/>
-            <CheckBox IsChecked="False" Content="Ekspres (+15zł)"/>
-            <ComboBox SelectedIndex="0">
-                <ComboBoxItem Content="Standardowa"/>
-                <ComboBoxItem Content="Paleta"/>
-                <ComboBoxItem Content="Ostrożnie szkło"/>
-            </ComboBox>
-            <Button Content="Wyceń" Margin="0,10" Width="100" Height="40" Background="RoyalBlue"/>
+    <Grid>
+        <Image Source="assets/background.jpg" Stretch="UniformToFill"/>
+        <StackPanel Width="800" Height="600" Background="LightYellow" HorizontalAlignment="Left" Margin="20">
+            <TextBlock Foreground="Black" HorizontalAlignment="Center" FontSize="20" Margin="5">Szczegóły Zamówienia</TextBlock>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock Foreground="Black" Padding="20" HorizontalAlignment="Center">Wysokość paczki:</TextBlock>
+            <TextBox Name="Height" HorizontalAlignment="Center" Width="100" Height="40"/>
             </StackPanel>
-    </WrapPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock Foreground="Black" HorizontalAlignment="Center" Padding="20">Szerokość paczki:</TextBlock>
+            <TextBox Name="Width" HorizontalAlignment="Center" Width="100" Height="40"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock Foreground="Black" HorizontalAlignment="Center" Padding="20">Głębokość paczki:</TextBlock>
+            <TextBox Name="Deep" HorizontalAlignment="Center" Width="100" Height="40"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock Foreground="Black" HorizontalAlignment="Center" Padding="20">Waga paczki:</TextBlock>
+            <TextBox Name="Weight" HorizontalAlignment="Center" Width="100" Height="40" Margin="30,0,0,0"/>
+            </StackPanel>
+            <CheckBox  Foreground="Black" Name="Express" HorizontalAlignment="Center" IsChecked="False" Content="Ekspres (+15zł)" Padding="20"/>
+            <ComboBox HorizontalAlignment="Center" Name="TypeOfPackage" SelectedIndex="0" Padding="20">
+                <ComboBoxItem Name="Standard" Content="Standardowa"/>
+                <ComboBoxItem Name="Paleta" Content="Paleta"/>
+                <ComboBoxItem Name="Glass" Content="Ostrożnie szkło"/>
+            </ComboBox>
+            <Button Content="Wyceń" HorizontalAlignment="Center" Name="Submit" Foreground="Black" Margin="0,10" Width="80" Height="30" Background="RoyalBlue" />
+            </StackPanel>
+        <Grid HorizontalAlignment="Right">
+            <Image Source="assets/opis.png"/>
+            <StackPanel>
+                <TextBlock></TextBlock>
+            </StackPanel>
+        </Grid>
+    </Grid>
 </Window>

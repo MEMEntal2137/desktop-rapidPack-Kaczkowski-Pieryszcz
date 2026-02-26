@@ -29,5 +29,7 @@
     <ItemGroup>
       <AvaloniaResource Include="assets\background.jpg" />
       <AvaloniaResource Include="assets\favicon.ico" />
+      <None Remove="assets\opis.png" />
+      <AvaloniaResource Include="assets\opis.png" />
     </ItemGroup>
 </Project>
