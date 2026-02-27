@@ -12,34 +12,33 @@
         <StackPanel Width="800" Height="600" Background="LightYellow" HorizontalAlignment="Left" Margin="20">
             <TextBlock Foreground="Black" HorizontalAlignment="Center" FontSize="20" Margin="5">Szczegóły Zamówienia</TextBlock>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <TextBlock Foreground="Black" Padding="20" HorizontalAlignment="Center">Wysokość paczki:</TextBlock>
-            <TextBox Name="Height" HorizontalAlignment="Center" Width="100" Height="40"/>
+            <TextBlock Foreground="Black" Padding="20" HorizontalAlignment="Center">Wysokość paczki (w cm):</TextBlock>
+            <TextBox x:Name="Height" HorizontalAlignment="Center" Width="100" Height="40"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <TextBlock Foreground="Black" HorizontalAlignment="Center" Padding="20">Szerokość paczki:</TextBlock>
-            <TextBox Name="Width" HorizontalAlignment="Center" Width="100" Height="40"/>
+            <TextBlock Foreground="Black" HorizontalAlignment="Center" Padding="20">Szerokość paczki (w cm):</TextBlock>
+            <TextBox x:Name="Width" HorizontalAlignment="Center" Width="100" Height="40"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <TextBlock Foreground="Black" HorizontalAlignment="Center" Padding="20">Głębokość paczki:</TextBlock>
-            <TextBox Name="Deep" HorizontalAlignment="Center" Width="100" Height="40"/>
+            <TextBlock Foreground="Black" HorizontalAlignment="Center" Padding="20">Głębokość paczki (w cm):</TextBlock>
+            <TextBox x:Name="Deep" HorizontalAlignment="Center" Width="100" Height="40"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <TextBlock Foreground="Black" HorizontalAlignment="Center" Padding="20">Waga paczki:</TextBlock>
-            <TextBox Name="Weight" HorizontalAlignment="Center" Width="100" Height="40" Margin="30,0,0,0"/>
+            <TextBlock Foreground="Black" HorizontalAlignment="Center" Padding="20" x:Name="WagaCheck">Waga paczki (w kg):</TextBlock>
+            <TextBox TextChanged="Weight_OnTextChanged" x:Name="Weight" HorizontalAlignment="Center" Width="100" Height="40" Margin="30,0,0,0"/>
             </StackPanel>
-            <CheckBox  Foreground="Black" Name="Express" HorizontalAlignment="Center" IsChecked="False" Content="Ekspres (+15zł)" Padding="20"/>
-            <ComboBox HorizontalAlignment="Center" Name="TypeOfPackage" SelectedIndex="0" Padding="20">
-                <ComboBoxItem Name="Standard" Content="Standardowa"/>
-                <ComboBoxItem Name="Paleta" Content="Paleta"/>
-                <ComboBoxItem Name="Glass" Content="Ostrożnie szkło"/>
+            <CheckBox  Foreground="Black" x:Name="Express" HorizontalAlignment="Center" IsChecked="False" Content="Ekspres (+15zł)" Padding="20"/>
+            <ComboBox HorizontalAlignment="Center" x:Name="TypeOfPackage" SelectedIndex="0" Padding="20">
+                <ComboBoxItem x:Name="Standard" Content="Standardowa (10zł)"/>
+                <ComboBoxItem x:Name="Paleta" Content="Paleta (100zł)"/>
+                <ComboBoxItem x:Name="Glass" Content="Ostrożnie szkło (20zł)"/>
             </ComboBox>
-            <Button Content="Wyceń" HorizontalAlignment="Center" Name="Submit" Foreground="Black" Margin="0,10" Width="80" Height="30" Background="RoyalBlue" />
+            <Button Click="Submit_OnClick" Content="Wyceń" HorizontalAlignment="Center" x:Name="Submit" Foreground="Black" Margin="0,10" Width="80" Height="30" Background="RoyalBlue" HorizontalContentAlignment="Center" />
+        </StackPanel>
+            <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Margin="25">
+                <Border BorderBrush="FloralWhite" BorderThickness="5">
+                <TextBlock Background="BlanchedAlmond" x:Name="ShowText" Width="400" Height="600" TextDecorations="Underline" Padding="5" TextAlignment="Center"></TextBlock>
+                </Border>
             </StackPanel>
-        <Grid HorizontalAlignment="Right">
-            <Image Source="assets/opis.png"/>
-            <StackPanel>
-                <TextBlock></TextBlock>
-            </StackPanel>
-        </Grid>
     </Grid>
 </Window>
