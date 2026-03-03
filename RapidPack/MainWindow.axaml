@@ -2,11 +2,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="800"
+        mc:Ignorable="d"
+        d:DesignWidth="1000"
+        d:DesignHeight="800"
         x:Class="RapidPack.MainWindow"
         Title="RapidPack"
         Icon="assets/favicon.ico">
-    
+
     <Grid>
         <Image Source="assets/background.jpg" Stretch="UniformToFill"/>
 
@@ -66,9 +68,9 @@
             <CheckBox Foreground="Black"
                       x:Name="Express"
                       HorizontalAlignment="Center"
-                      IsChecked="False"
+                      Width="200"
                       Content="Ekspres (+15zł)"
-                      Padding="20"/>
+                      Margin="0,10,0,0"/>
 
             <ComboBox HorizontalAlignment="Center"
                       x:Name="TypeOfPackage"
@@ -84,9 +86,9 @@
                     HorizontalAlignment="Center"
                     x:Name="Submit"
                     Foreground="Black"
+                    Width="200"
+                    Height="35"
                     Margin="0,10"
-                    Width="80"
-                    Height="30"
                     Background="RoyalBlue"/>
         </StackPanel>
 
