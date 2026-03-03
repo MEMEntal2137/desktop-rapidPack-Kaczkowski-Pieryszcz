@@ -95,9 +95,10 @@
                            x:Name="ShowText"
                            Width="400"
                            Height="600"
-                           TextDecorations="Underline"
                            Padding="5"
-                           TextAlignment="Center"/>
+                           TextAlignment="Center"
+                           FontWeight="Bold"
+                           TextWrapping="Wrap"/>
             </Border>
 
         </StackPanel>
