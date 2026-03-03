@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Authentication.ExtendedProtection;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 
@@ -12,14 +13,17 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
     
-    
-    private void Submit_OnClick(object? sender, RoutedEventArgs e)
+    ParcelCalculator parcelCalculator = new();
+    public void Submit_OnClick(object? sender, RoutedEventArgs e)
     {
-        var opis = "Podsumowanie Zamówienia:\n"+"";
+        int suma = int.Parse(TextBoxWidth.Text)+int.Parse(Height.Text)+int.Parse(Deep.Text);
+        string combobox = (TypeOfPackage.SelectionBoxItem as ComboBoxItem)?.Content?.ToString() ?? "Standard";
+        double price = parcelCalculator.Cena(int.Parse(WagaCheck.Text), combobox, Express.IsChecked ?? false, suma  );
+        var opis = $"Podsumowanie Zamówienia:\n {price}";
         ShowText.Text = opis;
     }
 
-    private void Weight_OnTextChanged(object? sender, TextChangedEventArgs e)
+    public void Weight_OnTextChanged(object? sender, TextChangedEventArgs e)
     {
         if (Weight.Text == "")
         {

@@ -17,7 +17,7 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <TextBlock Foreground="Black" HorizontalAlignment="Center" Padding="20">Szerokość paczki (w cm):</TextBlock>
-            <TextBox x:Name="Width" HorizontalAlignment="Center" Width="100" Height="40"/>
+            <TextBox x:Name="TextBoxWidth" HorizontalAlignment="Center" Width="100" Height="40"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <TextBlock Foreground="Black" HorizontalAlignment="Center" Padding="20">Głębokość paczki (w cm):</TextBlock>
