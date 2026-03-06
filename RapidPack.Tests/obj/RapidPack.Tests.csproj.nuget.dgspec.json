@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/piotr/Documents/GitHub/RapidPack.Tests/RapidPack.Tests.csproj": {}
+    "/home/jakubp/RiderProjects/desktop-rapidPack-Kaczkowski-Pieryszcz/RapidPack.Tests/RapidPack.Tests.csproj": {}
   },
   "projects": {
-    "/home/piotr/Documents/GitHub/RapidPack.Tests/RapidPack.Tests.csproj": {
+    "/home/jakubp/RiderProjects/desktop-rapidPack-Kaczkowski-Pieryszcz/RapidPack.Tests/RapidPack.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/piotr/Documents/GitHub/RapidPack.Tests/RapidPack.Tests.csproj",
+        "projectUniqueName": "/home/jakubp/RiderProjects/desktop-rapidPack-Kaczkowski-Pieryszcz/RapidPack.Tests/RapidPack.Tests.csproj",
         "projectName": "RapidPack.Tests",
-        "projectPath": "/home/piotr/Documents/GitHub/RapidPack.Tests/RapidPack.Tests.csproj",
-        "packagesPath": "/home/piotr/.nuget/packages/",
-        "outputPath": "/home/piotr/Documents/GitHub/RapidPack.Tests/obj/",
+        "projectPath": "/home/jakubp/RiderProjects/desktop-rapidPack-Kaczkowski-Pieryszcz/RapidPack.Tests/RapidPack.Tests.csproj",
+        "packagesPath": "/home/jakubp/.nuget/packages/",
+        "outputPath": "/home/jakubp/RiderProjects/desktop-rapidPack-Kaczkowski-Pieryszcz/RapidPack.Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/piotr/.nuget/NuGet/NuGet.Config"
+          "/home/jakubp/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -26,8 +26,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/home/piotr/Documents/GitHub/RapidPack/RapidPack.csproj": {
-                "projectPath": "/home/piotr/Documents/GitHub/RapidPack/RapidPack.csproj"
+              "/home/jakubp/RiderProjects/desktop-rapidPack-Kaczkowski-Pieryszcz/RapidPack/RapidPack.csproj": {
+                "projectPath": "/home/jakubp/RiderProjects/desktop-rapidPack-Kaczkowski-Pieryszcz/RapidPack/RapidPack.csproj"
               }
             }
           }
@@ -85,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/piotr/.dotnet/sdk/10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/home/jakubp/.dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -363,17 +363,17 @@
         }
       }
     },
-    "/home/piotr/Documents/GitHub/RapidPack/RapidPack.csproj": {
+    "/home/jakubp/RiderProjects/desktop-rapidPack-Kaczkowski-Pieryszcz/RapidPack/RapidPack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/piotr/Documents/GitHub/RapidPack/RapidPack.csproj",
+        "projectUniqueName": "/home/jakubp/RiderProjects/desktop-rapidPack-Kaczkowski-Pieryszcz/RapidPack/RapidPack.csproj",
         "projectName": "RapidPack",
-        "projectPath": "/home/piotr/Documents/GitHub/RapidPack/RapidPack.csproj",
-        "packagesPath": "/home/piotr/.nuget/packages/",
-        "outputPath": "/home/piotr/Documents/GitHub/RapidPack/obj/",
+        "projectPath": "/home/jakubp/RiderProjects/desktop-rapidPack-Kaczkowski-Pieryszcz/RapidPack/RapidPack.csproj",
+        "packagesPath": "/home/jakubp/.nuget/packages/",
+        "outputPath": "/home/jakubp/RiderProjects/desktop-rapidPack-Kaczkowski-Pieryszcz/RapidPack/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/piotr/.nuget/NuGet/NuGet.Config"
+          "/home/jakubp/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -440,7 +440,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/piotr/.dotnet/sdk/10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/home/jakubp/.dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
