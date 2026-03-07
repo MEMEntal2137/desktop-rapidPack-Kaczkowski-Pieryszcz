@@ -17,9 +17,41 @@ public partial class MainWindow : Window
     public void Submit_OnClick(object? sender, RoutedEventArgs e)
     {
         int suma = int.Parse(TextBoxWidth.Text??"0")+int.Parse(Height.Text??"0")+int.Parse(Deep.Text??"0");
-        string combobox = (TypeOfPackage.SelectionBoxItem as ComboBoxItem)?.Content?.ToString() ?? "Standard";
+        string combobox;
+        switch (TypeOfPackage.SelectedIndex)
+        {
+            case 0:
+            {
+                combobox = "Standard";
+            }
+                break;
+            case 2:
+            {
+                combobox = "Glass";
+            }
+                break;
+            case 1:
+            {
+                combobox = "Paleta";
+            }
+                break;
+            default:
+            {
+                combobox = "Standard";
+            }
+                break;
+        }
         double price = parcelCalculator.Cena(int.Parse(Weight.Text??"0"), combobox, Express.IsChecked ?? false, suma  );
-        var opis = $"Podsumowanie Zamówienia:\n {price}";
+        string express;
+        if (Express.IsChecked==true)
+        {
+            express = "Tak";
+        }
+        else
+        {
+            express = "Nie";
+        }
+        var opis = $"Podsumowanie Zamówienia:\nCena paczki: {price}zł\nWymiary paczki: {TextBoxWidth.Text}cm x {Height.Text}cm x {Deep.Text}cm\nWaga paczki: {Weight.Text} kg\nRodzaj paczki: {combobox}\nExpress: {express}";
         ShowText.Text = opis;
     }
 

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "/home/piotr/Documents/GitHub/RapidPack.Tests/RapidPack.Tests.csproj": {}
+    "C:\\Users\\Piotr\\Documents\\GitHub\\desktop-rapidPack-Kaczkowski-Pieryszcz\\RapidPack.Tests\\RapidPack.Tests.csproj": {}
   },
   "projects": {
-    "/home/piotr/Documents/GitHub/RapidPack.Tests/RapidPack.Tests.csproj": {
+    "C:\\Users\\Piotr\\Documents\\GitHub\\desktop-rapidPack-Kaczkowski-Pieryszcz\\RapidPack.Tests\\RapidPack.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/piotr/Documents/GitHub/RapidPack.Tests/RapidPack.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Piotr\\Documents\\GitHub\\desktop-rapidPack-Kaczkowski-Pieryszcz\\RapidPack.Tests\\RapidPack.Tests.csproj",
         "projectName": "RapidPack.Tests",
-        "projectPath": "/home/piotr/Documents/GitHub/RapidPack.Tests/RapidPack.Tests.csproj",
-        "packagesPath": "/home/piotr/.nuget/packages/",
-        "outputPath": "/home/piotr/Documents/GitHub/RapidPack.Tests/obj/",
+        "projectPath": "C:\\Users\\Piotr\\Documents\\GitHub\\desktop-rapidPack-Kaczkowski-Pieryszcz\\RapidPack.Tests\\RapidPack.Tests.csproj",
+        "packagesPath": "C:\\Users\\Piotr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Piotr\\Documents\\GitHub\\desktop-rapidPack-Kaczkowski-Pieryszcz\\RapidPack.Tests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/piotr/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Piotr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -26,8 +30,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/home/piotr/Documents/GitHub/RapidPack/RapidPack.csproj": {
-                "projectPath": "/home/piotr/Documents/GitHub/RapidPack/RapidPack.csproj"
+              "C:\\Users\\Piotr\\Documents\\GitHub\\desktop-rapidPack-Kaczkowski-Pieryszcz\\RapidPack\\RapidPack.csproj": {
+                "projectPath": "C:\\Users\\Piotr\\Documents\\GitHub\\desktop-rapidPack-Kaczkowski-Pieryszcz\\RapidPack\\RapidPack.csproj"
               }
             }
           }
@@ -85,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/piotr/.dotnet/sdk/10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Users\\Piotr\\.dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -363,17 +367,21 @@
         }
       }
     },
-    "/home/piotr/Documents/GitHub/RapidPack/RapidPack.csproj": {
+    "C:\\Users\\Piotr\\Documents\\GitHub\\desktop-rapidPack-Kaczkowski-Pieryszcz\\RapidPack\\RapidPack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/piotr/Documents/GitHub/RapidPack/RapidPack.csproj",
+        "projectUniqueName": "C:\\Users\\Piotr\\Documents\\GitHub\\desktop-rapidPack-Kaczkowski-Pieryszcz\\RapidPack\\RapidPack.csproj",
         "projectName": "RapidPack",
-        "projectPath": "/home/piotr/Documents/GitHub/RapidPack/RapidPack.csproj",
-        "packagesPath": "/home/piotr/.nuget/packages/",
-        "outputPath": "/home/piotr/Documents/GitHub/RapidPack/obj/",
+        "projectPath": "C:\\Users\\Piotr\\Documents\\GitHub\\desktop-rapidPack-Kaczkowski-Pieryszcz\\RapidPack\\RapidPack.csproj",
+        "packagesPath": "C:\\Users\\Piotr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Piotr\\Documents\\GitHub\\desktop-rapidPack-Kaczkowski-Pieryszcz\\RapidPack\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/piotr/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Piotr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -440,7 +448,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/piotr/.dotnet/sdk/10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Users\\Piotr\\.dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
