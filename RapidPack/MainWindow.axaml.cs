@@ -16,7 +16,7 @@ public partial class MainWindow : Window
     ParcelCalculator parcelCalculator = new();
     public void Submit_OnClick(object? sender, RoutedEventArgs e)
     {
-        int suma = int.Parse(TextBoxWidth.Text??"0")+int.Parse(Height.Text??"0")+int.Parse(Deep.Text??"0");
+        int suma = int.Parse(Width.Text??"0")+int.Parse(Height.Text??"0")+int.Parse(Deep.Text??"0");
         string combobox;
         switch (TypeOfPackage.SelectedIndex)
         {
@@ -51,7 +51,7 @@ public partial class MainWindow : Window
         {
             express = "Nie";
         }
-        var opis = $"Podsumowanie Zamówienia:\nCena paczki: {price}zł\nWymiary paczki: {TextBoxWidth.Text}cm x {Height.Text}cm x {Deep.Text}cm\nWaga paczki: {Weight.Text} kg\nRodzaj paczki: {combobox}\nExpress: {express}";
+        var opis = $"Podsumowanie Zamówienia:\nCena paczki: {price}zł\nWymiary paczki: {Width.Text}cm x {Height.Text}cm x {Deep.Text}cm\nWaga paczki: {Weight.Text} kg\nRodzaj paczki: {combobox}\nExpress: {express}";
         ShowText.Text = opis;
     }
 
