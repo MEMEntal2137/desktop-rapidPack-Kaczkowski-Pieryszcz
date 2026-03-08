@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Authentication.ExtendedProtection;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 
@@ -12,14 +13,49 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
     
-    
-    private void Submit_OnClick(object? sender, RoutedEventArgs e)
+    ParcelCalculator parcelCalculator = new();
+    public void Submit_OnClick(object? sender, RoutedEventArgs e)
     {
-        var opis = "Podsumowanie Zamówienia:\n"+"";
+        int suma = int.Parse(TextBoxWidth.Text??"0")+int.Parse(Height.Text??"0")+int.Parse(Deep.Text??"0");
+        string combobox;
+        switch (TypeOfPackage.SelectedIndex)
+        {
+            case 0:
+            {
+                combobox = "Standard";
+            }
+                break;
+            case 2:
+            {
+                combobox = "Glass";
+            }
+                break;
+            case 1:
+            {
+                combobox = "Paleta";
+            }
+                break;
+            default:
+            {
+                combobox = "Standard";
+            }
+                break;
+        }
+        double price = parcelCalculator.Cena(int.Parse(Weight.Text??"0"), combobox, Express.IsChecked ?? false, suma  );
+        string express;
+        if (Express.IsChecked==true)
+        {
+            express = "Tak";
+        }
+        else
+        {
+            express = "Nie";
+        }
+        var opis = $"Podsumowanie Zamówienia:\nCena paczki: {price}zł\nWymiary paczki: {TextBoxWidth.Text}cm x {Height.Text}cm x {Deep.Text}cm\nWaga paczki: {Weight.Text} kg\nRodzaj paczki: {combobox}\nExpress: {express}";
         ShowText.Text = opis;
     }
 
-    private void Weight_OnTextChanged(object? sender, TextChangedEventArgs e)
+    public void Weight_OnTextChanged(object? sender, TextChangedEventArgs e)
     {
         if (Weight.Text == "")
         {

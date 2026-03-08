@@ -1369,19 +1369,24 @@
     ]
   },
   "packageFolders": {
-    "/home/jakubp/.nuget/packages/": {}
+    "C:\\Users\\Piotr\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/jakubp/RiderProjects/desktop-rapidPack-Kaczkowski-Pieryszcz/RapidPack/RapidPack.csproj",
+      "projectUniqueName": "C:\\Users\\Piotr\\Documents\\GitHub\\desktop-rapidPack-Kaczkowski-Pieryszcz\\RapidPack\\RapidPack.csproj",
       "projectName": "RapidPack",
-      "projectPath": "/home/jakubp/RiderProjects/desktop-rapidPack-Kaczkowski-Pieryszcz/RapidPack/RapidPack.csproj",
-      "packagesPath": "/home/jakubp/.nuget/packages/",
-      "outputPath": "/home/jakubp/RiderProjects/desktop-rapidPack-Kaczkowski-Pieryszcz/RapidPack/obj/",
+      "projectPath": "C:\\Users\\Piotr\\Documents\\GitHub\\desktop-rapidPack-Kaczkowski-Pieryszcz\\RapidPack\\RapidPack.csproj",
+      "packagesPath": "C:\\Users\\Piotr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Piotr\\Documents\\GitHub\\desktop-rapidPack-Kaczkowski-Pieryszcz\\RapidPack\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/jakubp/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Piotr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -1448,7 +1453,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/jakubp/.dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Users\\Piotr\\.dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
